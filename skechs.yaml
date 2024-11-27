@@ -3,10 +3,11 @@ templates:
     files:
       - source: Dockerfile
         destination: docker/Dockerfile
+
       - source: entrypoint.sh
         destination: docker/entrypoint.sh
-    variables:
-      - name: JAVA_MAIN_CLASS
-        default: com.example.Main
-        description: Principal Class Java
-        type: text
+        variables:
+          - name: JAVA_MAIN_CLASS
+            default: com.example.Main
+            description: Principal Class Java
+            type: text
