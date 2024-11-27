@@ -1,9 +1,9 @@
 templates:
-  java21:
+  java22:
     files:
-      - source: java21/Dockerfile
+      - source: Dockerfile
         destination: docker/Dockerfile
-      - source: java21/entrypoint.sh
+      - source: entrypoint.sh
         destination: docker/entrypoint.sh
     variables:
       - name: JAVA_MAIN_CLASS
