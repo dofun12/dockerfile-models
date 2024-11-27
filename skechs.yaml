@@ -1,0 +1,12 @@
+templates:
+  java21:
+    files:
+      - source: java21/Dockerfile
+        destination: docker/Dockerfile
+      - source: java21/entrypoint.sh
+        destination: docker/entrypoint.sh
+    variables:
+      - name: JAVA_MAIN_CLASS
+        default: com.example.Main
+        description: Principal Class Java
+        type: text
